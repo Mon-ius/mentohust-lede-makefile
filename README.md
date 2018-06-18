@@ -58,31 +58,26 @@ if you __cannot__ understand makefile,you should better learn [openwrt start](ht
 
 
 These are all commands use in Ubuntu LTS.
-    > sudo apt-get update
 
-    > sudo apt-get install docker-ce
+> sudo apt-get update
 
-    > docker pull acrisliu/lede
+> sudo apt-get install docker-ce
 
-
-    > docker run -it acrisliu/lede
+> docker pull acrisliu/lede
 
 
-    > git clone https://github.com/Mon-ius/mentohust-lede-makefile.git
+> docker run -it acrisliu/lede
 
+> git clone https://github.com/Mon-ius/mentohust-lede-makefile.git
 
-    > cp mentohust-lede-makefile/mentohust package/
+> cp mentohust-lede-makefile/mentohust package/
 
+> make menuconfig
 
-    > make menuconfig
+> make package/mentohust/clean
 
+> make package/mentohust/compile
 
-    > make package/mentohust/clean
-
-
-    > make package/mentohust/compile
-
-
-    > find bin/ -name 'mentohust*.ipk'
+> find bin/ -name 'mentohust*.ipk'
 
 [Back to top](#readme)
