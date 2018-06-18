@@ -1,9 +1,10 @@
+##README
 ### 3 Steps To Build a Mentohust Package(.ipk) under Openwrt/LEDE Via Docker
 ##### Make life more stupid.
 ------
 #### 1st. Install Docker CE && Get LEDE BUILDROOT via hub
 
-1. [Install docker CE.]("https://docs.docker.com/install/")
+1. [Install docker CE](https://docs.docker.com/install/ "Docker Guide")
 2. Using a LEDE environment via docker 
 
 - Run command __docker search lede__.
@@ -23,7 +24,7 @@
     ![image 1](https://raw.githubusercontent.com/Mon-ius/ImagePack/master/mentohust/search.png "docker run  -it acrisliu/lede")
 
 #### 2nd. Copy Makefile into package
-if you __cannot__ understand makefile,you should better learn [openwrt start]("https://wiki.openwrt.org/doc/start") before.
+if you __cannot__ understand makefile,you should better learn [openwrt start](https://wiki.openwrt.org/doc/start "Openwrt WiKi") before.
 
 1. change dir into package/,make a mentohust dictionary. __(Must Do)__
 
@@ -55,12 +56,31 @@ __Do not build as root!!!__
 
 These are all commands use in Ubuntu LTS.
 > sudo apt-get update
+
 > sudo apt-get install docker-ce
+
+
 > docker pull acrisliu/lede
+
+
 > docker run -it acrisliu/lede
+
+
 > git clone https://github.com/Mon-ius/mentohust-lede-makefile.git
+
+
 > cp mentohust-lede-makefile/mentohust package/
+
+
 > make menuconfig
+
+
 > make package/mentohust/clean
+
+
 > make package/mentohust/compile
+
+
 > find bin/ -name 'mentohust*.ipk'
+
+[Back to top](#readme)
