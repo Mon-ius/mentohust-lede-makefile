@@ -33,7 +33,7 @@ if you __cannot__ understand makefile,you should better learn [openwrt start](ht
 
 2. Download Makefile into `package/mentohust/` via __wget__ .
 
-- wget "https://raw.githubusercontent.com/Mon-ius/mentohust-lede-makefile/mentohust/Makefile"
+- wget "https://raw.githubusercontent.com/Mon-ius/mentohust-lede-makefile/master/mentohust/Makefile"
 
 3. Download Makefile into `package/mentohust/` via __git clone__ .(optional)
 
