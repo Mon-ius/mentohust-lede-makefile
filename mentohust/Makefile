@@ -10,7 +10,7 @@ PKG_VERSION:=0.3.1
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mentohust/
+PKG_SOURCE_URL:=https://raw.githubusercontent.com/Mon-ius/mentohust-lede-makefile/src/
 PKG_MD5SUM:=c7033ba8d8e75294924ed03f4b7b0c45
 
 PKG_INSTALL:=1
