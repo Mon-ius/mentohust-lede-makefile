@@ -1,7 +1,8 @@
-##README
 ### 3 Steps To Build a Mentohust Package(.ipk) under Openwrt/LEDE Via Docker
 ##### Make life more stupid.
 ------
+### Warning 
+__Do not build as root!!!__ :hankey: :hankey: :hankey:
 #### 1st. Install Docker CE && Get LEDE BUILDROOT via hub
 
 1. [Install docker CE](https://docs.docker.com/install/ "Docker Guide")
@@ -17,11 +18,13 @@
 
     For example,I choose __acrisliu/lede__ and  use command below:
     > `docker search`
+
     > `docker pull acrisliu/lede`
+
     > `docker run  -it acrisliu/lede`
 
     And you will notice where you are.
-    ![image 1](https://raw.githubusercontent.com/Mon-ius/ImagePack/master/mentohust/search.png "docker run  -it acrisliu/lede")
+    ![image 1](https://raw.githubusercontent.com/Mon-ius/ImagePack/master/mentohust/start.png "docker run  -it acrisliu/lede")
 
 #### 2nd. Copy Makefile into package
 if you __cannot__ understand makefile,you should better learn [openwrt start](https://wiki.openwrt.org/doc/start "Openwrt WiKi") before.
@@ -51,36 +54,35 @@ if you __cannot__ understand makefile,you should better learn [openwrt start](ht
 7. Use find command to get __.ipk__ file,`find bin/ -name 'mentohust*.ipk'`
 8. Finish!
 
-### Warning and Conclusion 
-__Do not build as root!!!__
+### Conclusion 
+
 
 These are all commands use in Ubuntu LTS.
-> sudo apt-get update
+    > sudo apt-get update
 
-> sudo apt-get install docker-ce
+    > sudo apt-get install docker-ce
 
-
-> docker pull acrisliu/lede
-
-
-> docker run -it acrisliu/lede
+    > docker pull acrisliu/lede
 
 
-> git clone https://github.com/Mon-ius/mentohust-lede-makefile.git
+    > docker run -it acrisliu/lede
 
 
-> cp mentohust-lede-makefile/mentohust package/
+    > git clone https://github.com/Mon-ius/mentohust-lede-makefile.git
 
 
-> make menuconfig
+    > cp mentohust-lede-makefile/mentohust package/
 
 
-> make package/mentohust/clean
+    > make menuconfig
 
 
-> make package/mentohust/compile
+    > make package/mentohust/clean
 
 
-> find bin/ -name 'mentohust*.ipk'
+    > make package/mentohust/compile
+
+
+    > find bin/ -name 'mentohust*.ipk'
 
 [Back to top](#readme)
