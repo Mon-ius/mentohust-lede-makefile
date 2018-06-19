@@ -82,6 +82,7 @@ These are all commands use in Ubuntu LTS.
 
 > make package/mentohust/compile
 
+> find bin/ -name 'libcap*.ipk'
 > find bin/ -name 'mentohust*.ipk'
 
 ### Advanced Operation
